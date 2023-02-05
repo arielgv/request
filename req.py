@@ -9,4 +9,11 @@ def get_from_page():
     else:
         print('something went wrong with the link')
     print(r.text)
+    print('---------------------')
+    print('---------------------')
+    jason = r.json()
+    print(jason)
+    print(type(jason))
     
+    for category in jason:
+        print(category['name'])
